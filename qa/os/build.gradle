@@ -26,14 +26,15 @@ dependencies {
   api "org.hamcrest:hamcrest:${versions.hamcrest}"
   api "com.carrotsearch.randomizedtesting:randomizedtesting-runner:${versions.randomizedrunner}"
 
-  api "org.apache.httpcomponents:httpcore:${versions.httpcore}"
-  api "org.apache.httpcomponents:httpclient:${versions.httpclient}"
-  api "org.apache.httpcomponents:fluent-hc:${versions.httpclient}"
-  api "org.apache.logging.log4j:log4j-api:${versions.log4j}"
-  api "org.apache.logging.log4j:log4j-core:${versions.log4j}"
-  api "org.apache.logging.log4j:log4j-jcl:${versions.log4j}"
-  api "commons-codec:commons-codec:${versions.commonscodec}"
-  api "commons-logging:commons-logging:${versions.commonslogging}"
+  compile "org.apache.httpcomponents:httpcore:${versions.httpcore}"
+  compile "org.apache.httpcomponents:httpclient:${versions.httpclient}"
+  compile "org.apache.httpcomponents:fluent-hc:${versions.httpclient}"
+  api "com.rabbitmq:amqp-client:${versions.rabbitmq}"
+  compile "org.apache.logging.log4j:log4j-api:${versions.log4j}"
+  compile "org.apache.logging.log4j:log4j-core:${versions.log4j}"
+  compile "org.apache.logging.log4j:log4j-jcl:${versions.log4j}"
+  compile "commons-codec:commons-codec:${versions.commonscodec}"
+  compile "commons-logging:commons-logging:${versions.commonslogging}"
 
   api project(':libs:elasticsearch-core')
 
