@@ -56,7 +56,7 @@ dependencies {
   api "org.apache.httpcomponents:httpcore-nio:${versions.httpcore}"
   api "org.apache.httpcomponents:httpclient-cache:${versions.httpclient}"
   runtimeOnly 'com.google.guava:guava:19.0'
-  api "com.rabbitmq:amqp-client:${versions.rabbitmq}"
+  compile "com.rabbitmq:amqp-client:${versions.rabbitmq}"
 
   // Dependencies for oidc
   api "com.nimbusds:oauth2-oidc-sdk:7.0.2"

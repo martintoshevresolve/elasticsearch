@@ -55,9 +55,9 @@ public final class ActionBuilders {
         return JiraAction.builder(account, fields);
     }
 
-    public static RabbitMQAction.Builder rabbitmqAction(String account, String exchange, 
+    public static RabbitMQAction.Builder rabbitmqAction(String account, String vhost, String exchange, 
             String routingKey, Map<String, String> headers, String message) {
-        return RabbitMQAction.builder(account, exchange, routingKey, headers, message);
+        return RabbitMQAction.builder(account, vhost, exchange, routingKey, headers, message);
     }
     
     public static WebhookAction.Builder webhookAction(HttpRequestTemplate.Builder httpRequest) {
